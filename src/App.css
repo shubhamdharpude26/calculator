@@ -1,38 +1,75 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 .App {
-  text-align: center;
+
+  background: hsla(211, 66%, 87%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(211, 66%, 87%, 1) 0%,
+    hsla(348, 67%, 88%, 1) 50%,
+    rgb(132, 119, 144) 70%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(211, 66%, 87%, 1) 0%,
+    hsla(348, 67%, 88%, 1) 50%,
+    rgb(131, 113, 146) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(211, 66%, 87%, 1) 0%,
+    hsla(348, 67%, 88%, 1) 50%,
+    rgba(125, 97, 149, 0.801) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9DEF4", endColorstr="#F5CCD4", GradientType=1 );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  font-size: 1.3rem;
+  /* text-align: center; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin-bottom: 60px;
+  color: #ffff;
+  font-size: 3.5rem;
+  cursor: default;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calculator-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 60vh;
+  min-width: 25%;
 }
 
-.App-link {
-  color: #61dafb;
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 17%;
+  background-color: #3a4655;
+  box-shadow: 17px 24px 50px rgb(51, 48, 48);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 900px) {
+  .calculator-wrapper {
+    min-width: 50%;
   }
 }

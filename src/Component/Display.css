@@ -1,0 +1,20 @@
+.display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  border-radius: 6.4px 6.4px 0 0;
+  width: 80%;
+  height: 27%;
+  background-color:#3a4655;
+  cursor: normal;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+}
+
+.result {
+    color: #f0eeee;    
+  font-size: 38px;
+}
